@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meer Hamza — DFIR & Detection Engineering</title>
+  <meta name="description" content="Meer Hamza — DFIR Analyst and Detection Engineer with 6+ years in incident response, threat hunting, malware analysis and SIEM detection engineering. GCFA, GCIH. Jeddah, Saudi Arabia.">
+  <meta property="og:title" content="Meer Hamza — DFIR & Detection Engineering">
+  <meta property="og:description" content="6+ years in incident response, threat hunting and detection engineering across enterprise and banking. GCFA · GCIH.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b1220'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='%2334d399' font-family='monospace' font-weight='700'>MH</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body data-role="dfir">
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo"><span class="prompt">~$</span> meer<span class="accent">.hamza</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="role-switch" role="tablist" aria-label="Choose focus">
+            <button class="role-btn active" data-set-role="dfir" role="tab">DFIR</button>
+            <button class="role-btn" data-set-role="de" role="tab">Detection Engineering</button>
+          </div>
+          <p class="eyebrow mono">Jeddah, Saudi Arabia · GCFA · GCIH</p>
+          <h1>Meer Hamza</h1>
+          <p class="tagline">
+            <span data-role-only="dfir">Digital Forensics · Incident Response · Threat Hunting</span>
+            <span data-role-only="de">Detection Engineering · SIEM Optimization · DFIR</span>
+          </p>
+          <p class="lead" data-role-only="dfir">
+            DFIR analyst with <strong>6+ years</strong> in cybersecurity — investigating high-severity incidents across
+            enterprise and banking environments, from credential and source-code leaks to supply-chain compromise.
+            A penetration-testing background keeps my investigations attacker-focused.
+          </p>
+          <p class="lead" data-role-only="de">
+            Detection engineer with <strong>6+ years</strong> across detection development, threat hunting and incident
+            response. I build, validate and tune SIEM detections in SPL, KQL, EQL/ES|QL and Sigma — mapped to MITRE ATT&amp;CK
+            and grounded in real incident insight.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn" href="#projects">View projects</a>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/meer-hamza-0a1a3b1b4/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/meerhmza0-hue" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://medium.com/@meerhmza0" target="_blank" rel="noopener">Medium</a>
+            <a href="https://ranges.io/profile/meerhmza0" target="_blank" rel="noopener">Ranges.io</a>
+            <a href="https://app.hackthebox.com/profile/201275" target="_blank" rel="noopener">Hack The Box</a>
+            <a href="https://tryhackme.com/p/hmza432" target="_blank" rel="noopener">TryHackMe</a>
+          </div>
+        </div>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="term-bar"><span></span><span></span><span></span><em class="mono">investigation.log</em></div>
+          <pre class="term-body mono" id="termBody"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><b data-count="6">0</b><span>+ years in cybersecurity</span></div>
+        <div class="stat"><b data-count="3">0</b><span>major incidents handled end-to-end</span></div>
+        <div class="stat"><b data-count="150">0</b><span>+ detections engineered</span></div>
+        <div class="stat"><b data-count="300">0</b><span>+ rules tuned</span></div>
+        <div class="stat"><b data-count="38">0</b><span>% Splunk ingestion reduced</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2><span class="num mono">01.</span> About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a cybersecurity professional based in Jeddah, currently working as a <strong>DFIR Analyst at Accenture
+              Middle East</strong> for a Tier-1 banking client. My work sits where incident response meets detection:
+              I investigate what attackers did, then turn those findings into detections, hunts and playbooks so it
+              doesn't happen quietly again.
+            </p>
+            <p>
+              Over the last six years I've moved from penetration testing, to security engineering and SOC operations,
+              to leading high-severity investigations at Saudi National Bank and Accenture. Along the way I've
+              translated SAMA regulatory advisories into targeted threat hunts, converted red-team findings into
+              detection use cases, and worked with Cortex XSOAR teams on automated containment.
+            </p>
+            <p>
+              Lately I've been applying AI to security operations &mdash; building AI skills that turn routine analysis, such as
+              Windows logging gap assessments, into repeatable, measurable workflows.
+            </p>
+            <p>
+              Outside work I write about malware analysis and forensics on Medium and compete in CTFs —
+              including a <strong>win at a SANS CTF on Ranges.io</strong>.
+            </p>
+          </div>
+          <ul class="focus-list">
+            <li><span class="dot"></span>Incident investigation &amp; root-cause analysis</li>
+            <li><span class="dot"></span>Proactive threat hunting (MITRE ATT&amp;CK)</li>
+            <li><span class="dot"></span>Detection engineering &amp; alert tuning</li>
+            <li><span class="dot"></span>Malware &amp; phishing analysis</li>
+            <li><span class="dot"></span>Compromise assessments</li>
+            <li><span class="dot"></span>SIEM optimization &amp; SOAR automation</li>
+            <li><span class="dot"></span>AI-assisted security workflows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2><span class="num mono">02.</span> Experience</h2>
+        <div class="timeline">
+
+          <article class="job">
+            <div class="job-head">
+              <div><h3>DFIR Analyst</h3><p class="org">Accenture Middle East</p></div>
+              <p class="when mono">Jan 2026 – Present · Saudi Arabia</p>
+            </div>
+            <ul data-role-only="dfir">
+              <li>Handled <b>3 major real-world incidents</b> end-to-end &mdash; <b>credential leakage</b>, <b>client data leakage</b> and <b>server compromise</b> &mdash; from scoping and forensic analysis through containment, eradication and reporting.</li>
+              <li>Directed end-to-end response to high-severity incidents for a Tier-1 banking client — identification, containment, eradication and defensible reporting.</li>
+              <li>Investigated credential leakage, source-code leakage and supply-chain compromise, establishing exposure scope, root cause, business impact and remediation priorities.</li>
+              <li>Supported Tier 2/3 SOC escalations with forensic analysis and investigation guidance.</li>
+              <li>Translated SAMA regulatory advisories into targeted threat hunts, documented for compliance and executive assurance.</li>
+              <li>Converted red-team findings into IR playbook improvements and detection use cases; worked with Cortex XSOAR on repeatable containment.</li>
+              <li>Developed <b>150+ detections</b> and tuned <b>300+ rules</b> mapped to MITRE ATT&amp;CK; optimized Splunk ingestion by <b>38%</b>.</li>
+              <li>Performed a <b>Windows logging gap assessment</b>, scoring current telemetry coverage against 52 sub-categories and recommending audit-policy, Operational-channel and Sysmon changes to close visibility gaps.</li>
+            </ul>
+            <ul data-role-only="de">
+              <li>Ran a <b>Windows logging gap assessment</b> &mdash; mapped ingested EventCodes to 52 telemetry sub-categories, scored coverage before and after, and prioritized the audit-policy and Sysmon events detections depend on.</li>
+              <li>Engineered <b>150+ new SIEM detections</b> and tuned <b>300+ existing rules</b>, mapped to MITRE ATT&amp;CK and client risk priorities to close gaps and cut false-positive noise.</li>
+              <li>Validated and optimized Splunk log sources, reducing daily ingestion by <b>38%</b> while maintaining detection fidelity and lowering licensing cost.</li>
+              <li>Translated red-team findings and control gaps into new detection use cases and IR playbook improvements.</li>
+              <li>Partnered with the Cortex XSOAR team on automated, repeatable containment actions.</li>
+              <li>Converted SAMA regulatory advisories into targeted threat hunts for compliance reporting.</li>
+              <li>Handled <b>3 major incidents</b> &mdash; credential leakage, client data leakage and server compromise &mdash; and fed the findings back into new detections.</li>
+            </ul>
+            <div class="tags"><span>Splunk</span><span>Cortex XSOAR</span><span>MITRE ATT&amp;CK</span><span>Threat Hunting</span><span>Gap Assessment</span><span>Banking</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div><h3>DFIR Analyst</h3><p class="org">ITS2 (Saudi National Bank)</p></div>
+              <p class="when mono">Nov 2022 – Dec 2025 · Saudi Arabia</p>
+            </div>
+            <ul>
+              <li data-role-only="de">Created and improved security detections and ran proactive threat hunts to strengthen monitoring and response.</li>
+              <li>Handled Tier 2/3 escalations from continuous monitoring — alert investigation, incident response and reporting.</li>
+              <li>Performed compromise assessments for credential leaks, social-media compromise claims and supply-chain incidents.</li>
+              <li data-role-only="dfir">Served as a DFIR subject-matter resource, advising on investigations, preventive controls and incident handling.</li>
+              <li>Documented findings and procedures, presented outcomes to security teams and leadership, and collaborated with XSOAR on automation.</li>
+            </ul>
+            <div class="tags"><span>Incident Response</span><span>Compromise Assessment</span><span>XSOAR</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div><h3>Cyber Security Analyst</h3><p class="org">Cisco (Nets International)</p></div>
+              <p class="when mono">Apr 2022 – Oct 2022 · Remote</p>
+            </div>
+            <ul>
+              <li>Continuous SIEM monitoring, alert investigation and incident response support.</li>
+              <li>Forensic analysis of compromised systems, coordinating containment and remediation.</li>
+              <li>Static and dynamic analysis of phishing emails and malware.</li>
+            </ul>
+            <div class="tags"><span>SIEM</span><span>Malware Analysis</span><span>Phishing</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div><h3>Security Engineer</h3><p class="org">Ebryx</p></div>
+              <p class="when mono">Feb 2021 – Apr 2022 · Lahore, Pakistan</p>
+            </div>
+            <ul>
+              <li>Developed QRadar and CrowdStrike rules to identify and respond to threats.</li>
+              <li>Monitored enterprise and cloud events — AWS CloudWatch, GuardDuty, Security Hub, GCP Security Command Center.</li>
+              <li>Deployed the Elastic Stack and built ElastAlert rules; automated operations with Python and Bash.</li>
+              <li>Supported and trained new team members.</li>
+            </ul>
+            <div class="tags"><span>QRadar</span><span>CrowdStrike</span><span>Elastic</span><span>AWS</span><span>GCP</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div><h3>Penetration Tester</h3><p class="org">Programmers Force</p></div>
+              <p class="when mono">Jul 2020 – Feb 2021 · Lahore, Pakistan</p>
+            </div>
+            <ul>
+              <li>Web-application and network penetration tests using manual techniques plus Nessus, Hydra and Nmap.</li>
+              <li>Assessed logic, authentication and configuration weaknesses; risk assessments and red-team-style exercises.</li>
+              <li>Phishing and social-engineering assessments; delivered security-awareness sessions.</li>
+            </ul>
+            <div class="tags"><span>Pentesting</span><span>Nmap</span><span>Nessus</span><span>Social Engineering</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2><span class="num mono">03.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <h3>Digital Forensics &amp; IR</h3>
+            <p>Host &amp; system forensics, evidence analysis, root-cause analysis, compromise assessment, triage, containment, eradication, recovery, IR playbooks.</p>
+          </div>
+          <div class="card">
+            <h3>Detection Engineering</h3>
+            <p>Correlation rules, alert tuning, detection coverage, MITRE ATT&amp;CK mapping, SIEM use-case development, coverage &amp; tuning reports.</p>
+          </div>
+          <div class="card">
+            <h3>Query Languages</h3>
+            <div class="chips"><span>Splunk SPL</span><span>Microsoft KQL</span><span>Elastic EQL</span><span>ES|QL</span><span>Sigma</span></div>
+          </div>
+          <div class="card">
+            <h3>SIEM / XDR</h3>
+            <div class="chips"><span>Splunk</span><span>IBM QRadar</span><span>CrowdStrike</span><span>Elastic Stack</span><span>ElastAlert</span></div>
+          </div>
+          <div class="card">
+            <h3>Threat Hunting &amp; Analysis</h3>
+            <p>Proactive hunting, static &amp; dynamic malware analysis, phishing analysis, threat research.</p>
+          </div>
+          <div class="card">
+            <h3>Validation &amp; Testing</h3>
+            <p>Attack simulation, historical-log validation, regression testing, FP/FN analysis, query performance testing.</p>
+          </div>
+          <div class="card">
+            <h3>Automation &amp; Scripting</h3>
+            <div class="chips"><span>Cortex XSOAR</span><span>Python</span><span>PowerShell</span><span>Bash</span></div>
+          </div>
+          <div class="card">
+            <h3>Cloud &amp; Platforms</h3>
+            <div class="chips"><span>Windows</span><span>Linux</span><span>AWS GuardDuty</span><span>Security Hub</span><span>CloudWatch</span><span>GCP SCC</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & AI -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2><span class="num mono">04.</span> Projects &amp; AI</h2>
+        <div class="project-feature">
+          <div class="pf-text">
+            <p class="mono date">Featured &middot; Open source</p>
+            <h3>Windows Logs Gap Assessment &mdash; AI Skill</h3>
+            <p>
+              Most Windows estates forward Security, System and Application logs and assume they're covered. In practice,
+              visibility often hinges on settings that are easy to miss: command-line capture for 4688, SACLs for object
+              access, and Operational channels like PowerShell, WMI-Activity and DNS-Client. This AI skill makes those gaps
+              <b>measurable</b>.
+            </p>
+            <ul>
+              <li>Takes a SIEM export (sourcetypes + EventCodes) and maps what you actually ingest to <b>52 telemetry sub-categories</b>.</li>
+              <li>Scores each as Full / Partial / None, recommends the logs to enable, and shows coverage <b>before vs after</b> as one number management can track.</li>
+              <li>Two modes: <b>Windows Logs Gap Assessment</b> (native audit policy &amp; Operational channels) and <b>Sysmon Value Assessment</b> (is Sysmon worth it, and which event IDs first).</li>
+              <li>Produces a formula-driven, two-sheet Excel report, checked for errors before delivery.</li>
+            </ul>
+            <div class="tags"><span>AI Skill</span><span>Windows Event Logs</span><span>Sysmon</span><span>Splunk SPL</span><span>Detection Coverage</span></div>
+            <div class="cta"><a class="btn primary" href="https://github.com/meerhmza0-hue/windows-logs-gap-assessment-skill" target="_blank" rel="noopener">View on GitHub &#8599;</a></div>
+          </div>
+          <div class="pf-visual mono" aria-hidden="true">
+            <div class="pf-head"><span>Sub-category</span><span>Now</span><span>After</span></div>
+            <div class="pf-row"><span>Process creation (4688 + cmdline)</span><i class="st partial">Partial</i><i class="st full">Full</i></div>
+            <div class="pf-row"><span>PowerShell script block</span><i class="st none">None</i><i class="st full">Full</i></div>
+            <div class="pf-row"><span>WMI activity</span><i class="st none">None</i><i class="st full">Full</i></div>
+            <div class="pf-row"><span>DNS client queries</span><i class="st none">None</i><i class="st partial">Partial</i></div>
+            <div class="pf-row"><span>Account logon</span><i class="st full">Full</i><i class="st full">Full</i></div>
+            <div class="pf-score"><span>Coverage score</span><b>before &rarr; after</b></div>
+            <small class="muted">Illustrative sample of report output</small>
+          </div>
+        </div>
+
+        <h3 class="sub">AI in my security work</h3>
+        <div class="ai-grid">
+          <div class="card"><h3>Building AI skills</h3><p>Packaging repeatable security analysis, like log gap assessments, as AI skills with a fixed methodology so results are consistent and auditable rather than ad hoc.</p></div>
+          <div class="card"><h3>Agentic automation</h3><p>Exploring AI agents for security tooling and workflow automation, from data pipelines to small internal tools built and iterated quickly.</p></div>
+          <div class="card"><h3>MCP-powered analysis</h3><p>Connecting AI agents to security tooling through MCP servers such as REA, using them for reverse engineering, malware analysis and automated artifact analysis across binaries, scripts and web pages.</p></div>
+          <div class="card"><h3>Local models</h3><p>Learning to run open-weight LLMs such as Qwen locally, so sensitive evidence and logs can be analyzed offline without leaving the environment, which matters in banking and regulated DFIR work.</p></div>
+        </div>
+        <p class="more"><a href="https://github.com/meerhmza0-hue" target="_blank" rel="noopener">More on GitHub &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- CERTS -->
+    <section id="certs" class="section">
+      <div class="container">
+        <h2><span class="num mono">05.</span> Certifications &amp; Training</h2>
+        <div class="certs-grid">
+          <a class="cert" href="https://www.credly.com/badges/7fdd247a-e900-45cd-9e48-cf4cf0a0f759" target="_blank" rel="noopener">
+            <span class="badge">GCFA</span><div><b>GIAC Certified Forensic Analyst</b><small>GIAC · Verify ↗</small></div>
+          </a>
+          <a class="cert" href="https://www.giac.org/certified-professional/Meer-Hamza/219438" target="_blank" rel="noopener">
+            <span class="badge">GCIH</span><div><b>GIAC Certified Incident Handler</b><small>GIAC · Verify ↗</small></div>
+          </a>
+          <a class="cert" href="https://www.linkedin.com/in/meer-hamza-0a1a3b1b4/details/certifications/" target="_blank" rel="noopener">
+            <span class="badge">SC-200</span><div><b>Microsoft Security Operations Analyst Associate</b><small>Microsoft · Verify ↗</small></div>
+          </a>
+          <a class="cert" href="https://verified.elearnsecurity.com/certificates/23b3e75f-035b-4a64-81d0-27125426d301" target="_blank" rel="noopener">
+            <span class="badge">eCIR</span><div><b>Certified Incident Responder</b><small>eLearnSecurity · Verify ↗</small></div>
+          </a>
+          <a class="cert" href="https://www.credly.com/badges/8a541048-cee3-409d-99b0-b54591c631d2/public_url" target="_blank" rel="noopener">
+            <span class="badge">CCSK</span><div><b>Certificate of Cloud Security Knowledge</b><small>Cloud Security Alliance · Verify ↗</small></div>
+          </a>
+        </div>
+        <h3 class="sub">Professional training</h3>
+        <ul class="training">
+          <li><b>SANS FOR508</b> — Advanced Incident Response, Threat Hunting &amp; Digital Forensics</li>
+          <li><b>SANS SEC504</b> — Hacker Tools, Techniques &amp; Incident Handling</li>
+          <li><b>TCM Security</b> — Practical Malware Analysis &amp; Triage</li>
+          <li><b>TCM Security</b> — Practical Windows Forensics</li>
+          <li><b>Kaspersky</b> — Reverse Engineering 101</li>
+        </ul>
+        <h3 class="sub">Education</h3>
+        <div class="edu">
+          <b>Bachelor of Computer Science</b> — University of Central Punjab, Lahore <span class="mono muted">2016 – 2020 · CGPA 3.62/4.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="section">
+      <div class="container">
+        <h2><span class="num mono">06.</span> Writing &amp; Research</h2>
+        <div class="posts">
+          <a class="post" href="https://medium.com/@meerhmza0/from-phishing-email-attachment-to-phantom-stealer-e2b6fe2daa02" target="_blank" rel="noopener">
+            <span class="mono date">Feb 2026</span><h3>From Phishing Email Attachment to Phantom Stealer</h3><p>Deobfuscating and reverse engineering a stealer delivered via phishing.</p>
+          </a>
+          <a class="post" href="https://medium.com/@meerhmza0/malware-analysis-malicious-js-in-cisco-store-to-steal-credit-cards-credentials-6b0204dd6890" target="_blank" rel="noopener">
+            <span class="mono date">Dec 2025</span><h3>Malicious JS in Cisco Store to Steal Credit Cards &amp; Credentials</h3><p>Malware analysis of a web skimmer.</p>
+          </a>
+          <a class="post" href="https://medium.com/@meerhmza0/submitting-links-and-urls-to-public-scanner-41de1a538302" target="_blank" rel="noopener">
+            <span class="mono date">Dec 2022</span><h3>Is Submitting Links and URLs to Public Scanners Safe?</h3><p>The data-exposure risk of public URL analyzers.</p>
+          </a>
+          <a class="post" href="https://medium.com/@meerhmza0/malware-analysis-injecting-macros-via-remote-template-3bff82aa4918" target="_blank" rel="noopener">
+            <span class="mono date">May 2022</span><h3>Injecting Macros via Remote Template</h3><p>Analyzing remote template injection in malicious documents.</p>
+          </a>
+          <a class="post" href="https://medium.com/@meerhmza0/digital-forensics-investigating-the-lnk-files-bd52bf5a057" target="_blank" rel="noopener">
+            <span class="mono date">Nov 2021</span><h3>Digital Forensics — Investigating LNK Files</h3><p>What shortcut files reveal during an investigation.</p>
+          </a>
+          <a class="post" href="https://medium.com/@meerhmza0/digital-forensics-investigating-prefetch-files-a26b187c3c0c" target="_blank" rel="noopener">
+            <span class="mono date">Nov 2021</span><h3>Digital Forensics — Investigating Prefetch Files</h3><p>Proving execution with Windows Prefetch artifacts.</p>
+          </a>
+        </div>
+        <p class="more"><a href="https://medium.com/@meerhmza0" target="_blank" rel="noopener">All articles on Medium →</a></p>
+
+        <h3 class="sub">CTFs &amp; labs</h3>
+        <div class="ctf-grid">
+          <a class="ctf" href="https://ranges.io/profile/meerhmza0" target="_blank" rel="noopener"><b>🏆 SANS CTF Winner</b><small>Ranges.io</small></a>
+          <a class="ctf" href="https://app.hackthebox.com/profile/201275" target="_blank" rel="noopener"><b>Hack The Box</b><small>Profile ↗</small></a>
+          <a class="ctf" href="https://tryhackme.com/p/hmza432" target="_blank" rel="noopener"><b>TryHackMe</b><small>Profile ↗</small></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2><span class="num mono">07.</span> Contact</h2>
+        <p class="lead">Happy to talk DFIR, detection engineering and threat hunting — reach out any time.</p>
+        <div class="cta center">
+          <a class="btn primary" href="mailto:meerhmza0@gmail.com">meerhmza0@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/meer-hamza-0a1a3b1b4/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn" href="https://github.com/meerhmza0-hue" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container mono">© <span id="year"></span> Meer Hamza · Built with plain HTML/CSS · Hosted free on GitHub Pages</div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
